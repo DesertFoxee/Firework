@@ -5,36 +5,31 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include <map>
-
+#include "Random.h"
 #include "Object.h"
 #include "Utility.h"
+#include "Shape.h"
+#include "config.h"
+
 
 using namespace sf;
 using namespace std;
 
-
 #define MAX_HEART 50
 
 
-struct UnitHeart
+class HeartShape :public MShape
 {
-	sf::Vector2f loc; 
-	sf::Vector2f vec;
-	sf::Vector2f acc;
-	sf::CircleShape shape;
-};
-
-
-
-class HeartShape
-{
+private:
+	vector<UnitHeart> unit_heart;
+	float time_life;
 public:
-	void init();
+	HeartShape();
+	bool end();
+	void init(Vector2f position);
 	void draw(RenderWindow& window);
 	void update();
-private:
-	int count = 0;
-	vector<UnitHeart> unit_heart;
+
 };
 
 

@@ -8,8 +8,7 @@ void Game::init() {
 	window.create(sf::VideoMode(width, height), title ,sf::Style::Default , settings);
 	if (limit_frame != 0) window.setFramerateLimit(limit_frame);
 
-	//fireworks.init();
-	heart.init();
+	fireworks.init();
 }
 
 Game::Game(std::string title, unsigned int width, unsigned int height, unsigned int limit_frame) {
@@ -23,8 +22,7 @@ Game::Game(std::string title, unsigned int width, unsigned int height, unsigned 
 void Game::draw() {
 	window.clear();
 
-	heart.draw(window);
-	//fireworks.draw(window);
+	fireworks.draw(window);
 	window.display();
 }
 
@@ -43,9 +41,7 @@ void Game::run() {
 }
 
 void Game::update() {
-
-	heart.update();
-	//fireworks.update();
+	fireworks.update();
 }
 
 void Game::process() {

@@ -7,7 +7,8 @@ void Firework::init() {
 }
 
 void Firework::addFirework() {
-	UnitFireWork firework = {Vector2f(float(Random::intUniform(0, MAX_SCREEN_WIDTH)), MAX_SCREEN_HEIGH), 2.5f};
+	int type = Random::intUniform(0, 1);
+	UnitFireWork firework = { Vector2f(float(Random::intUniform(0, MAX_SCREEN_WIDTH)), MAX_SCREEN_HEIGH), 2.5f , type};
 	firework.firework.vec = Vector2f(0, -Random::normal(2.5f, 2.8f));
 	fireworks.push_back(firework);
 }
@@ -38,7 +39,7 @@ void Firework::update() {
 }
 
 void Firework::draw(sf::RenderWindow& window) {
-	for (auto firework : fireworks) {
+	for (auto &firework : fireworks) {
 		firework.draw(window);
 	}
 }

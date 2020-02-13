@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "Object.h"
+#include "Shape.h"
 
 #define TIME_LIMIT_DEFAULT 200
 #define RAIDUS_DEFAULT 10

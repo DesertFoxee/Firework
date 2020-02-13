@@ -60,6 +60,9 @@
     <ClCompile Include="HeartShape.cpp">
       <Filter>Source Files\src\obj</Filter>
     </ClCompile>
+    <ClCompile Include="BasicShape.cpp">
+      <Filter>Source Files\src\obj</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="openal32.dll">
@@ -131,6 +134,9 @@
       <Filter>Header Files\library\obj</Filter>
     </ClInclude>
     <ClInclude Include="HeartShape.h">
+      <Filter>Header Files\library\obj</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicShape.h">
       <Filter>Header Files\library\obj</Filter>
     </ClInclude>
   </ItemGroup>

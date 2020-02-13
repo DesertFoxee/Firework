@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BasicShape.cpp" />
     <ClCompile Include="Convert.cpp" />
     <ClCompile Include="Firework.cpp" />
     <ClCompile Include="HeartShape.cpp" />
@@ -177,6 +178,7 @@
     <None Include="sfml-window-d-2.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BasicShape.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="Convert.h" />
     <ClInclude Include="Actionable.h" />
